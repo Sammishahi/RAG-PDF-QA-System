@@ -7,7 +7,7 @@ This project converts PDF documents into vector embeddings, stores them inside a
 ---
 
 # Project Architecture
-
+```text
                     PDF Documents
                           │
                           ▼
@@ -18,31 +18,32 @@ This project converts PDF documents into vector embeddings, stores them inside a
                           │
                           ▼
                   Text Splitting
-              (Chunking Documents)
                           │
                           ▼
              HuggingFace Embeddings
                           │
                           ▼
                  Chroma Vector Store
-                          │
-────────────────────────────────────────────────
-                          │
+
+--------------------------------------------------
+
                   User Question
                           │
                           ▼
-                  Vector Retrieval
-          (Most Relevant Document Chunks)
+                 Vector Retrieval
                           │
                           ▼
-                LangChain RetrievalQA
+          Relevant Document Chunks
                           │
                           ▼
-                Groq Llama-3.1 LLM
+             LangChain RetrievalQA
                           │
                           ▼
-                    Final Answer
-
+             Groq Llama-3.1 LLM
+                          │
+                          ▼
+                  Final Answer
+```
 ---
 
 # Project Structure

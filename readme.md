@@ -4,6 +4,7 @@ A complete Retrieval-Augmented Generation (RAG) pipeline built using **LangChain
 
 This project converts PDF documents into vector embeddings, stores them inside a Chroma vector database, and answers user queries using semantic search + LLM.
 
+
 ---
 
 # Project Architecture
